@@ -1,3 +1,43 @@
-body {
-    background-color: lightblue;
+@font-face {
+    font-family: 'GeneralSans-Bold';
+    src: url('fonts/GeneralSans-Bold.otf') format('opentype');
+    font-family: 'GeneralSans-Medium';
+    src: url('fonts/GeneralSans-Medium.otf') format('opentype');
 }
+
+body {
+    background-color: rgb(197, 197, 197);
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    letter-spacing: 0.5pt;
+}
+
+.title {
+    font-family: 'GeneralSans-Bold';
+    color: rgb(0, 0, 0);
+    font-size: 50pt;
+    text-align: center;
+}
+
+.bodytext {
+    font-family: 'GeneralSans-Medium';
+    color: rgb(51, 51, 51);
+    font-size: 20pt;
+    text-align: center;
+}
+  
+ul {
+    list-style-position: inside;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
