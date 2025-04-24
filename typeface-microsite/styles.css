@@ -2,6 +2,8 @@
 @font-face {
     font-family: 'WitchHunt';
     src: url('fonts/WitchHunt.woff') format('opentype');
+    font-family: 'JustMeAgainDownHere-Regular';
+    src: url('fonts/JustMeAgainDownHere-Regular.woff') format('opentype');
 }
 
 body {
