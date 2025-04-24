@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'WitchHunt';
     src: url('fonts/WitchHunt.otf') format('opentype');
@@ -13,9 +14,33 @@ body {
 }
 
 .bodytext {
-    font-family: 'WitchHunt', serif;
+    font-family: 'WitchHunt';
     color: rgb(159, 16, 211);
     font-size: 20pt;
+}
+
+.heading1 {
+    font-family: 'WitchHunt';
+    color: rgb(111, 140, 198);
+    font-size: 100pt;
+    text-align: center;
+    line-height: 90pt;
+}
+
+.heading2 {
+    font-family: 'WitchHunt';
+    color: rgb(159, 16, 211);
+    font-size: 100pt;
+    text-align: center;
+    line-height: 90pt;
+}
+
+.doodle-heading {
+    font-family: 'JustMeAgainDownHere-Regular';
+    color: rgb(111, 140, 198);
+    font-size: 100pt;
+    text-align: center;
+    line-height: 90pt;
 }
 
 .fixed-footer1 {
