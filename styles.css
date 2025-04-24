@@ -1,9 +1,19 @@
 @font-face {
-    font-family: 'GeneralSans-Bold';
-    src: url('fonts/GeneralSans-Bold.otf') format('opentype');
     font-family: 'GeneralSans-Medium';
-    src: url('fonts/GeneralSans-Medium.otf') format('opentype');
-}
+    src: url('../fonts/GeneralSans-Medium.woff2') format('woff2'),
+         url('../fonts/GeneralSans-Medium.woff') format('woff'),
+         url('../fonts/GeneralSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+    font-family: 'GeneralSans-Bold';
+    src: url('../fonts/GeneralSans-Bold.woff2') format('woff2'),
+         url('../fonts/GeneralSans-Bold.woff') format('woff'),
+         url('../fonts/GeneralSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+  }
 
 body {
     background-color: rgb(197, 197, 197);
