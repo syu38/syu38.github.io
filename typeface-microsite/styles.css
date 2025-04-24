@@ -20,6 +20,7 @@ body {
 }
 
 .bodytext {
+    margin-top: 0px;
     font-family: 'WitchHunt';
     color: rgb(159, 16, 211);
     font-size: 20pt;
