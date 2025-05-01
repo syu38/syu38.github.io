@@ -71,7 +71,7 @@ body:not(.typing-page) {
 .bodytext {
     margin-top: 0px;
     font-family: 'WitchHunt';
-    color: rgb(159, 16, 211);
+    color: rgb(111, 140, 198);
     font-size: 20pt;
 }
 
@@ -107,7 +107,7 @@ body:not(.typing-page) {
     left: 40px;
     font-family: 'WitchHunt';
     font-size: 20pt;
-    color: rgb(111, 140, 198);
+    color: rgb(159, 16, 211);
     padding: 10px 0;
     z-index: 998;
 }
@@ -120,7 +120,7 @@ body:not(.typing-page) {
     right: 40px;
     font-family: 'WitchHunt';
     font-size: 20pt;
-    color: rgb(111, 140, 198);
+    color: rgb(159, 16, 211);
     padding: 10px 0;
     z-index: 999;
 }
@@ -131,7 +131,7 @@ body:not(.typing-page) {
     left: 40px;
     font-family: 'WitchHunt';
     font-size: 20pt;
-    color: rgb(111, 140, 198);
+    color: rgb(159, 16, 211);
     padding: 10px 0;
     z-index: 998;
 }
@@ -142,10 +142,22 @@ body:not(.typing-page) {
     right: 40px;
     font-family: 'WitchHunt';
     font-size: 20pt;
-    color: rgb(111, 140, 198);
+    color: rgb(159, 16, 211);
     padding: 10px 0;
     z-index: 999;
 }
+
+.fixed-footer1 a,
+.fixed-footer2 a,
+.fixed-footer3 a,
+.fixed-footer4 a {
+    font-family: 'WitchHunt';
+    font-size: 20pt;
+    color: rgb(159, 16, 211);
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+
 
 .scatter-char {
     display: inline-block;
