@@ -41,8 +41,8 @@ body.typing-page {
     text-align: center;
     overflow: hidden;
     box-sizing: border-box;
-    margin: 0 auto; /* 가운데 정렬 */
-    padding: 0;     /* 여백 제거 */
+    margin: 0 auto;
+    padding: 0;    
 }  
   
 #displayText {
