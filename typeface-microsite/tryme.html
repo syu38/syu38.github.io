@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Typing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="typing-page">
+  <div id="displayWrapper">
+    <div id="displayText">type something</div>
+  </div>
+
+  <div class="fixed-footer3"><a href="index.html">WitchHunt</a></div>
+  <div class="fixed-footer4"><a href="info.html">Info</a></div>
+
+  <script>
+    const display = document.getElementById('displayText');
+    const wrapper = document.getElementById('displayWrapper');
+  
+    let typedText = '';
+    let hasStartedTyping = false;
+  
+    function updateDisplayText(text) {
+      display.textContent = text;
+  
+      // 초기 글자 크기
+      let fontSize = 1000;
+      display.style.fontSize = fontSize + 'px';
+  
+      // 글자 크기 조정
+      while (display.scrollWidth > wrapper.clientWidth && fontSize > 5) {
+        fontSize -= 5;
+        display.style.fontSize = fontSize + 'px';
+      }
+    }
+  
+    document.addEventListener('keydown', (e) => {
+      if (e.key.length === 1 && !e.metaKey && !e.ctrlKey) {
+        if (!hasStartedTyping) {
+          hasStartedTyping = true;
+          typedText = '';
+        }
+        typedText += e.key;
+      } else if (e.key === 'Backspace') {
+        typedText = typedText.slice(0, -1);
+      }
+  
+      // 초기 메시지 복구
+      if (typedText.length === 0) {
+        hasStartedTyping = false;
+        updateDisplayText('type something');
+      } else {
+        updateDisplayText(typedText);
+      }
+    });
+  
+    // 초기 상태 설정
+    updateDisplayText('type something');
+  </script>
+  
+</body>
+</html>

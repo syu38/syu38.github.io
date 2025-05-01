@@ -16,4 +16,30 @@
 </body>
 </html>
 
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const text = document.querySelector(".bodytext");
+        const chars = text.textContent.split("");
+        text.innerHTML = "";
+    
+        chars.forEach(char => {
+            const span = document.createElement("span");
+            span.textContent = char === " " ? "\u00A0" : char;  // 띄어쓰기 유지
+            span.classList.add("scatter-char");
+            text.appendChild(span);
+        });
+    
+        const spans = document.querySelectorAll(".scatter-char");
+    
+        spans.forEach(span => {
+            span.addEventListener("mouseenter", () => {
+                span.classList.add("fly-away");
+                setTimeout(() => {
+                    span.classList.remove("fly-away");
+                }, 1000); // 1초 후에 다시 원위치
+            });
+        });
+    });
+    </script>
+    
     

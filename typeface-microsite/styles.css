@@ -2,22 +2,71 @@
 @font-face {
     font-family: 'WitchHunt';
     src: url('fonts/WitchHunt.woff') format('woff');
-  }
+}
   
-  @font-face {
+@font-face {
     font-family: 'JustMeAgainDownHere-Regular';
     src: url('fonts/JustMeAgainDownHere-Regular.woff') format('woff');
-  }
+}
+  
+  
+body.typing-page {
+    background-color: black;
+    color: rgb(111, 140, 198);
+    font-family: 'WitchHunt', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+  
+#inputText {
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 20px;
+    width: 80%;
+    background-color: black;
+    color: rgb(111, 140, 198);
+    border: none;
+    border-bottom: 2px solid white;
+    text-align: center;
+    outline: none;
+    font-family: 'WitchHunt', sans-serif;
+}
+  
+#displayWrapper {
+    width: 95vw;
+    max-width: 100%;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 auto; /* 가운데 정렬 */
+    padding: 0;     /* 여백 제거 */
+}  
+  
+#displayText {
+    display: inline-block;
+    white-space: nowrap;
+    color: rgb(111, 140, 198);
+    font-family: 'WitchHunt', sans-serif;
+    font-size: 1000px;
+    line-height: 1.1;
+    padding-top: 0.1em;
+}
+  
   
 
-body {
+
+body:not(.typing-page) {
     background-color: rgb(0, 0, 0);
     margin-top: 40px;
-    margin-right: 20px;
+    margin-right: 40px;
     margin-bottom: 40px;
-    margin-left: 20px;
+    margin-left: 40px;
     letter-spacing: 0.5pt;
 }
+
 
 .bodytext {
     margin-top: 0px;
@@ -51,9 +100,11 @@ body {
 }
 
 .fixed-footer1 {
+    opacity: 0;
+    transition: opacity 0.5s ease;
     position: fixed;
-    bottom: 0;
-    left: 20px;
+    bottom: 30px;
+    left: 40px;
     font-family: 'WitchHunt';
     font-size: 20pt;
     color: rgb(111, 140, 198);
@@ -62,12 +113,75 @@ body {
 }
 
 .fixed-footer2 {
+    opacity: 0;
+    transition: opacity 0.5s ease;
     position: fixed;
-    bottom: 0;
-    right: 20px;
+    bottom: 30px;
+    right: 40px;
     font-family: 'WitchHunt';
     font-size: 20pt;
     color: rgb(111, 140, 198);
     padding: 10px 0;
     z-index: 999;
 }
+
+.fixed-footer3 {
+    position: fixed;
+    bottom: 30px;
+    left: 40px;
+    font-family: 'WitchHunt';
+    font-size: 20pt;
+    color: rgb(111, 140, 198);
+    padding: 10px 0;
+    z-index: 998;
+}
+
+.fixed-footer4 {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    font-family: 'WitchHunt';
+    font-size: 20pt;
+    color: rgb(111, 140, 198);
+    padding: 10px 0;
+    z-index: 999;
+}
+
+.scatter-char {
+    display: inline-block;
+    transition: transform 1s ease, opacity 1s ease;
+    will-change: transform, opacity;
+}
+
+.fly-away {
+    transform: translate(200px, -200px) rotate(-720deg);
+    opacity: 0;
+}
+
+.show-footer {
+    opacity: 1;
+}
+
+.bat-fly {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1em;
+    height: 1em;
+    font-size: 1em;
+    line-height: 1;
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+    will-change: transform, opacity;
+    cursor: pointer;
+    position: relative;
+}
+  
+.bat-fly:hover {
+    transform: translate(-200px, -300px) rotate(-60deg) scale(0.7);
+    opacity: 0;
+    pointer-events: none;
+}
+  
+  
+  
+  

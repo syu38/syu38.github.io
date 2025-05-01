@@ -7,27 +7,58 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <p class="heading1">witch & spider <br>
+    <p class="heading2"><br>
+        <br>
+        <br>
+        <br>
+        WitchHunt<br>
+        <span class="bat-fly">🦇</span>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </p>
+    <p class="heading1">
+        (inspired by) <br>
+        witches & spiders <br>
+        <span class="bat-fly">🦇</span>
+        <br>
+        (made for) <br>
         movie poster <br>
-        <span class="doodle-heading">150–300</span> pt<br></p>
-    <div class="fixed-footer1">WitchHunt</div>
+        <span class="doodle-heading">150–300</span> pt<br>
+        <br>
+        <br>
+        <br></p>
     <p class="heading2">ABCDEFGHIJK<br>
         LMNOPQRSTU<br>
         VWXYZ<br>
         abcdefghijklmn<br>
         opqrstuvwxyz<br>
+        <span class="bat-fly">🦇</span>
         <br>
-        <br>
-        ‘ ’ “ ”<br>
-        !?. , :; - – — <br>
+        . , :;‘’“”!?- – — <br>
         /()[]@# &<br>
-        🦇
         </p>
-    <!-- 기존 fixed-footer2 -->
+
     <div class="fixed-footer2"><a href="info.html">Info</a></div>
-
-    <!-- 그리고 WitchHunt는 다시 메인으로 -->
-    <div class="fixed-footer1"><a href="index.html">WitchHunt</a></div>
-
+    <div class="fixed-footer1"><a href="tryme.html">Try Me</a></div>
+      
 </body>
 </html>
+
+<script>
+    const footer1 = document.querySelector('.fixed-footer1');
+    const footer2 = document.querySelector('.fixed-footer2');
+  
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) { // if user scroll
+        footer1.classList.add('show-footer');
+        footer2.classList.add('show-footer');
+      } else {
+        footer1.classList.remove('show-footer');
+        footer2.classList.remove('show-footer');
+      }
+    });
+  </script>
+  
